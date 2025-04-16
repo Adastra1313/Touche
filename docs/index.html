@@ -124,7 +124,7 @@
 
     // Час показу карт перед початком гри та час самої гри
     const previewTime = 2; // 2 секунди показу
-    const playTime = 7;    // 7 секунд на знаходження пар
+    const playTime = 10;    // 10 секунд на знаходження пар
     let timeLeft = playTime;
 
     let timerInterval;
@@ -162,7 +162,7 @@
         });
         lockBoard = false; // Розблокуємо кліки для гравця
 
-        // Запускаємо 7-секундний таймер гри
+        // Запускаємо 10-секундний таймер гри
         timeLeft = playTime;
         timerDisplay.textContent = `Час: ${timeLeft}`;
         timerInterval = setInterval(() => {
